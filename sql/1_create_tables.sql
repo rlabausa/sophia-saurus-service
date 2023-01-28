@@ -53,6 +53,7 @@ CREATE TABLE [sophiasaurus].[TAGS]
 );
 GO
 
+
 CREATE TABLE [sophiasaurus].[BOOKS]
 (
 	book_id BIGINT IDENTITY(1,1) PRIMARY KEY,
@@ -80,6 +81,7 @@ CREATE TABLE [sophiasaurus].[USERS_BOOKS]
 	CONSTRAINT fk_usersbooks_book_id FOREIGN KEY (book_id) REFERENCES [sophiasaurus].[BOOKS] (book_id)
 );
 GO
+
 
 CREATE TABLE [sophiasaurus].[AUTHORS_BOOKS]
 (
